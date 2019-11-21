@@ -1,0 +1,55 @@
+<link href="../css/bootstrap.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<div id="page">
+    <div class="menu_block">
+        <!-- MENU -->
+        <div class="pull-right">
+            <nav class="navmenu center">
+                <ul>
+                    <li class="first active scroll_btn"><a href="Administrador.jsp" >Home</a></li>
+                    <li class="scroll_btn"><a href="ContratarEmpleados.jsp" >Contratar Empleados</a></li>
+                    <li class="scroll_btn"><a href="AsignarJefe.jsp" >Asignar jefe de empleado</a></li>
+                    <li class="scroll_btn"><a href="CambiarVacaciones.jsp" >Cambiar fecha de empleado</a></li>
+                    <li class="scroll_btn"><a href="AumentoSueldos.jsp" >Aumento de Sueldos</a></li>
+                    <li class="scroll_btn"><a href="PagoEmpleados.jsp" >Pago de Empleados</a></li>
+                    <li class="scroll_btn"><a href="Tarifario.jsp" >Tarifario</a></li>
+                    <li class="scroll_btn"><a href="TarifarioEspecial.jsp" >Tarifario Especialista</a></li>
+                    <li class="scroll_btn"><a href="" >Modificar Tarifario</a></li>
+                    <li class="scroll_btn"><a href="" >Modificar Tarifario Especialista</a></li>
+                    <li class="scroll_btn"><a href="RenunDespi.jsp" >Renuncias/Despidos</a></li>
+                    <li class="sub-menu">
+                        <a href="javascript:void(0);" >Reportes</a>
+                        <ul>
+                            <li><a href="blog.html" >Ganancias</a></li>
+                            <li><a href="blog-post.html" >Top 5 Popularidad</a></li>
+                            <li><a href="portfolio-post.html" >Top 5 Comentadas</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div><!-- //MENU -->
+    </div><!-- //MENU BLOCK -->
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<form action="ControlAumento" method="POST">
+    <div class="form-group col-lg-4 container">
+        <label for="dpiA">DPI del Empleado:</label>
+        <input required class="form-control" id="dpiA" name="dpiA" placeholder="Ingrese el DPI del empleado a aumentarle">
+    </div>
+    <div class="form-group col-lg-4 container">
+        <label for="nuevoS">Nuevo Sueldo:</label>
+        <input required class="form-control" id="nuevoS" name="nuevoS" placeholder="Ingrese el nuevo sueldo del Empleado">
+    </div>
+    <div class="col-lg-4 container form-group">
+        <button type="submit" class=" btn btn-primary">Listo</button>
+    </div>
+    <div class="form-group col-lg-4 container">
+        <label>Transaccion correcta: Lo redigira a su pagina principal.</label>
+        <label>Transaccion incorrecta: Recargara la pagina.</label>
+    </div>
+</form>
